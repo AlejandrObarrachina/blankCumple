@@ -13,6 +13,9 @@ html, body{
 .regalo-pic{
   width: 100%;
 }
+small { 
+  line-height: normal;
+}
 
 h1{
   font-weight: 700;

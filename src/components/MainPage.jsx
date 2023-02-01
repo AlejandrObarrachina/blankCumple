@@ -20,27 +20,27 @@ function MainPage() {
       question: "¿Te gustan los gatos?",
       image: "/foto_gato.jpg",
       options: [
-        {value: "SU"},{value:"Nah"}
+        {value: "Yas"},{value:"Nah"}
       ],
     },
     {
       question: "¿Te gusta el vino?",
       image: "/foto_vino.jpg",
       options: [
-        {value: "SU"},{value:"Nah"}
+        {value: "Yas"},{value:"Nah"}
       ],
     },
     {
       question: "¿Estas libre este 5 de febrero?",
       image: "/foto_plan.jpg",
       options: [
-        {value: "SU"},{value:"Nah"}
+        {value: "Yas"},{value:"Nah"}
       ],
     },
 
     {
       question: "Enhorabuena has conseguido un regalo",
-      image: "",
+      image: "/gift.png",
       options: [
         {value: "GENERAR REGALO"}
       ],
@@ -54,11 +54,11 @@ function MainPage() {
       })
     }
     
-    if (e.target.value == "SU") {
+    if (e.target.value == "Yas") {
       slider.current.next(500)
       
     } else{
-      slider.current.to(0, 500)
+      slider.current.to(-1, 500)
     }
     
   }
